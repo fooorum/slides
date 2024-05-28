@@ -27,7 +27,7 @@ https://fooorum.vercel.app
 
 ---
 
-### Beiträge auflisten
+### Startseite
 
 <iframe src="https://fooorum.vercel.app/posts" height="100%"></iframe>
 
@@ -39,18 +39,6 @@ https://fooorum.vercel.app
 
 ---
 
-### Nutzeransicht
-
-<iframe src="https://fooorum.vercel.app/users/1" height="100%"></iframe>
-
----
-
-### Forumansicht
-
-<iframe src="https://fooorum.vercel.app/forums/1" height="100%"></iframe>
-
----
-
 ### Anmelden
 
 <iframe src="https://fooorum.vercel.app/login" height="100%"></iframe>
@@ -59,6 +47,4 @@ https://fooorum.vercel.app
 
 ### Beiträge erstellen
 
-<iframe src="https://fooorum.vercel.app/post/1" height="100%"></iframe>
-
----
+<iframe src="https://fooorum.vercel.app/post/3" height="100%"></iframe>
