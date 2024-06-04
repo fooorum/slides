@@ -1,0 +1,41 @@
+---
+import "reveal.js/dist/reveal.css";
+import "reveal.js/dist/theme/night.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html>
+  <head>
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+
+    <meta charset="utf-8" />
+    <meta name="locale" content="de_DE" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <slot />
+      </div>
+    </div>
+    <script>
+      import Reveal from "reveal.js";
+      Reveal.initialize({
+        controlsTutorial: false,
+        slideNumber: true,
+        hash: true,
+        hideCursorTime: 2000,
+      });
+    </script>
+  </body>
+</html>

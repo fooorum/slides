@@ -1,0 +1,26 @@
+{
+  "name": "@fooorum/slides",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.8.3",
+    "reveal.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/reveal.js": "^5.0.3",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-astro"
+    ]
+  }
+}

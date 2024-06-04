@@ -1,0 +1,43 @@
+---
+import Slides from "../layouts/Slides.astro";
+---
+
+<Slides title="Fooorum Slides">
+  <section>
+    <h1>🇫ooorum</h1>
+    <p>Ein simples Internetforum.</p>
+  </section>
+  <section>
+    <section>
+      <h2>Demo</h2>
+      <p><a href="https://fooorum.vercel.app">https://fooorum.vercel.app</a></p>
+    </section>
+
+    <section>
+      <h3>Startseite</h3>
+      <iframe src="https://fooorum.vercel.app/posts"></iframe>
+    </section>
+
+    <section>
+      <h3>Beitragsansicht</h3>
+      <iframe src="https://fooorum.vercel.app/posts/3"></iframe>
+    </section>
+
+    <section>
+      <h3>Anmelden</h3>
+      <iframe src="https://fooorum.vercel.app/login"></iframe>
+    </section>
+
+    <section>
+      <h3>Beiträge erstellen</h3>
+      <iframe src="https://fooorum.vercel.app/post/3"></iframe>
+    </section>
+  </section>
+</Slides>
+
+<style>
+  iframe {
+    width: 700px;
+    height: 300px;
+  }
+</style>
