@@ -1,6 +1,6 @@
 ---
 import "reveal.js/dist/reveal.css";
-import "reveal.js/plugin/highlight/monokai.css";
+import "highlight.js/styles/base16/onedark.css";
 import "@styles/theme.scss";
 import "@fontsource-variable/montserrat";
 import "@fontsource/poppins";
@@ -33,7 +33,8 @@ const { title, description } = Astro.props;
     </div>
     <script>
       import Reveal from "reveal.js";
-      import RevealHighlight from "reveal.js/plugin/highlight/highlight.js";
+      import RevealHighlight from "reveal.js/plugin/highlight/highlight.esm.js";
+
       Reveal.initialize({
         controlsTutorial: false,
         slideNumber: true,
