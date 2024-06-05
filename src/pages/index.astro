@@ -19,24 +19,10 @@ import feed from "fooorum/src/components/feeds/Feed.astro?raw";
       <p><a href="https://fooorum.vercel.app">fooorum.vercel.app</a></p>
     </section>
 
-    <section>
-      <h3>Startseite</h3>
-      <iframe src="https://fooorum.vercel.app/posts"></iframe>
-    </section>
-
-    <section>
-      <h3>Beitragsansicht</h3>
-      <iframe src="https://fooorum.vercel.app/posts/3"></iframe>
-    </section>
-
-    <section>
-      <h3>Anmelden</h3>
-      <iframe src="https://fooorum.vercel.app/login"></iframe>
-    </section>
-
-    <section>
-      <h3>Beiträge erstellen</h3>
-      <iframe src="https://fooorum.vercel.app/post/3"></iframe>
+    <section
+      data-background-iframe="https://fooorum.vercel.app"
+      data-background-interactive
+    >
     </section>
   </section>
   <section>
