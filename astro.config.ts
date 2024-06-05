@@ -5,7 +5,11 @@ import favicons from "astro-favicons";
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    icon(),
+    icon({
+      include: {
+        tabler: ["brand-foursquare"],
+      },
+    }),
     favicons({
       appName: "Fooorum Slides",
       appShortName: "Fooorum Slides",

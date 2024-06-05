@@ -17,6 +17,9 @@ dependencies:
   '@iconify-json/material-symbols':
     specifier: ^1.1.80
     version: 1.1.81
+  '@iconify-json/tabler':
+    specifier: ^1.1.113
+    version: 1.1.113
   astro:
     specifier: ^4.8.3
     version: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(typescript@5.4.5)
@@ -957,6 +960,12 @@ packages:
 
   /@iconify-json/material-symbols@1.1.81:
     resolution: {integrity: sha512-DJhgiZQ935K2pG/ZhChLOA0tcQFZn8jCc1SVhiPY1cdjPslyamD569zaBm4Op5cAf6ouK8m6W85YVV8hXBLMgg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify-json/tabler@1.1.113:
+    resolution: {integrity: sha512-dT34D0gyqxgK2t91+8scQ+U387yZ/zb4r7/3CHqhmvaVMsnOT8DFtX0FhJzdr6ldnVH82pGAp59GGr97IT/UfQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
