@@ -15,4 +15,9 @@ export default defineConfig({
     }),
   ],
   site: "https://fooorum.netlify.app",
+  vite: {
+    ssr: {
+      noExternal: ["@fontsource-variable/montserrat"],
+    },
+  },
 });

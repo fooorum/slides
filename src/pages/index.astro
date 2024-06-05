@@ -1,6 +1,6 @@
 ---
 import Slides from "@layouts/Slides.astro";
-import Fetch from "@components/Fetch.astro";
+import config from "fooorum/db/config?raw";
 ---
 
 <Slides title="Fooorum Slides">
@@ -45,7 +45,7 @@ import Fetch from "@components/Fetch.astro";
     </section>
     <section>
       <pre>
-        <code data-line-numbers="5-12|14-23|53-54"><Fetch path="db/config.ts" /></code>
+        <code data-line-numbers="5-12|14-23|53-54" set:html={config} />
       </pre>
     </section>
   </section>
