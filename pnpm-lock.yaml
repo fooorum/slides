@@ -8,6 +8,12 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.5.10
     version: 0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.3.0)(typescript@5.4.5)
+  '@fontsource-variable/montserrat':
+    specifier: ^5.0.19
+    version: 5.0.19
+  '@fontsource/poppins':
+    specifier: ^5.0.14
+    version: 5.0.14
   '@iconify-json/material-symbols':
     specifier: ^1.1.80
     version: 1.1.81
@@ -851,6 +857,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/montserrat@5.0.19:
+    resolution: {integrity: sha512-vOlVjdGock2yBOeBbg5qexPa1TJM/PS8Nx9YlF6DFEtFf/Y5ayDbZRvV/WPj8W2vk7/aDxUEtTAp/Qp8wK9hNQ==}
+    dev: false
+
+  /@fontsource/poppins@5.0.14:
+    resolution: {integrity: sha512-nmM1zpPo3Uh4JcGAVSQuWaZNYh2FbbwWhZ5t6hRaynmJaNTBW85d3nEh9zMmzI0HX7X5xqQVdRHeDatKpOGsnA==}
+    dev: false
 
   /@iconify-json/material-symbols@1.1.81:
     resolution: {integrity: sha512-DJhgiZQ935K2pG/ZhChLOA0tcQFZn8jCc1SVhiPY1cdjPslyamD569zaBm4Op5cAf6ouK8m6W85YVV8hXBLMgg==}

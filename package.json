@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
+    "@fontsource-variable/montserrat": "^5.0.19",
+    "@fontsource/poppins": "^5.0.14",
     "@iconify-json/material-symbols": "^1.1.80",
     "astro": "^4.8.3",
     "astro-favicons": "^2.0.2",

@@ -1,0 +1,15 @@
+// Default mixins and settings -----------------
+@import "../../node_modules/reveal.js/css/theme/template/mixins";
+@import "../../node_modules/reveal.js/css/theme/template/settings";
+
+$backgroundColor: #121212;
+$mainFont: 'Poppins', caption, sans-serif;
+$linkColor: #ce93d8;
+$linkColorHover: $linkColor;
+$headingFont: "Montserrat", sans-serif;
+$headingTextTransform: none;
+$selectionBackgroundColor: #ce93d8;
+
+@include light-bg-text-color(#222222);
+
+@import "../../node_modules/reveal.js/css/theme/template/theme";
