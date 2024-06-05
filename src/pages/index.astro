@@ -1,6 +1,7 @@
 ---
 import Slides from "@layouts/Slides.astro";
 import config from "fooorum/db/config?raw";
+import feed from "fooorum/src/components/feeds/Feed.astro?raw";
 ---
 
 <Slides title="Fooorum Slides">
@@ -40,12 +41,25 @@ import config from "fooorum/db/config?raw";
   </section>
   <section>
     <section>
-      <h2>Quellcode</h2>
+      <h2>Implementierung</h2>
       <p><a href="https://github.com/fooorum/fooorum">github.com/fooorum</a></p>
     </section>
     <section>
+      <h3>Deklarierung der Tabellen</h3>
       <pre>
-        <code data-line-numbers="5-12|14-23|53-54" set:html={config} />
+        <code data-line-numbers="5-12|14-23|53-54" class="language-typescript" set:html={config} />
+      </pre>
+    </section>
+    <section>
+      <h3>Abfragen</h3>
+      <pre>
+        <code data-line-numbers="62-76|77-78|79-82" class="language-typescript" set:html={feed} />
+      </pre>
+    </section>
+    <section>
+      <h3>Anzeigen</h3>
+      <pre>
+        <code data-line-numbers="120-122" class="language-html" set:html={feed} />
       </pre>
     </section>
   </section>
