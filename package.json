@@ -10,8 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@iconify-json/material-symbols": "^1.1.80",
     "astro": "^4.8.3",
-    "reveal.js": "^5.1.0"
+    "astro-favicons": "^2.0.2",
+    "astro-icon": "^1.1.0",
+    "reveal.js": "^5.1.0",
+    "sass": "^1.77.1"
   },
   "devDependencies": {
     "@types/reveal.js": "^5.0.3",
