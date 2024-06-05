@@ -1,0 +1,18 @@
+---
+interface Props {
+  path: string;
+  base?: string;
+}
+
+const {
+  path,
+  base = "https://raw.githubusercontent.com/fooorum/fooorum/main/",
+} = Astro.props;
+
+const url = new URL(path, base);
+const response = await fetch(url);
+const blob = await response.blob();
+const text = await blob.text();
+---
+
+{text}
