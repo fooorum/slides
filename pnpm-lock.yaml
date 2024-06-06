@@ -15,13 +15,13 @@ dependencies:
     specifier: ^5.0.14
     version: 5.0.14
   '@iconify-json/material-symbols':
-    specifier: ^1.1.80
+    specifier: ^1.1.81
     version: 1.1.81
   '@iconify-json/tabler':
     specifier: ^1.1.113
     version: 1.1.113
   astro:
-    specifier: ^4.8.3
+    specifier: ^4.9.2
     version: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(typescript@5.4.5)
   astro-favicons:
     specifier: ^2.0.2
@@ -31,7 +31,7 @@ dependencies:
     version: 1.1.0
   fooorum:
     specifier: github:fooorum/fooorum
-    version: github.com/fooorum/fooorum/f9c02945b31eddc94bec2838eee03ab205ce51d4(prettier-plugin-astro@0.13.0)(prettier@3.3.0)(typescript@5.4.5)
+    version: github.com/fooorum/fooorum/42b85c97b4c63e6e66246e64232ba62a8c9c49e4(prettier-plugin-astro@0.13.0)(prettier@3.3.0)(typescript@5.4.5)
   highlight.js:
     specifier: ^11.9.0
     version: 11.9.0
@@ -39,7 +39,7 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0
   sass:
-    specifier: ^1.77.1
+    specifier: ^1.77.4
     version: 1.77.4
 
 devDependencies:
@@ -47,7 +47,7 @@ devDependencies:
     specifier: ^5.0.3
     version: 5.0.3
   prettier:
-    specifier: ^3.2.5
+    specifier: ^3.3.0
     version: 3.3.0
   prettier-plugin-astro:
     specifier: ^0.13.0
@@ -6063,9 +6063,9 @@ packages:
     resolution: {integrity: sha512-Bq0B+ixT/DMyG8kgX2xWcI5jUvCwqrMxSFam7m0lAf78nf04hv6lNCsyLYdyYTrCVMqNDY/206K7eExYCeSyUQ==}
     dev: false
 
-  github.com/fooorum/fooorum/f9c02945b31eddc94bec2838eee03ab205ce51d4(prettier-plugin-astro@0.13.0)(prettier@3.3.0)(typescript@5.4.5):
-    resolution: {tarball: https://codeload.github.com/fooorum/fooorum/tar.gz/f9c02945b31eddc94bec2838eee03ab205ce51d4}
-    id: github.com/fooorum/fooorum/f9c02945b31eddc94bec2838eee03ab205ce51d4
+  github.com/fooorum/fooorum/42b85c97b4c63e6e66246e64232ba62a8c9c49e4(prettier-plugin-astro@0.13.0)(prettier@3.3.0)(typescript@5.4.5):
+    resolution: {tarball: https://codeload.github.com/fooorum/fooorum/tar.gz/42b85c97b4c63e6e66246e64232ba62a8c9c49e4}
+    id: github.com/fooorum/fooorum/42b85c97b4c63e6e66246e64232ba62a8c9c49e4
     name: fooorum
     version: 1.0.0
     dependencies:
@@ -6075,6 +6075,7 @@ packages:
       '@fontsource-variable/montserrat': 5.0.19
       '@fontsource/poppins': 5.0.14
       '@iconify-json/material-symbols': 1.1.81
+      '@iconify-json/tabler': 1.1.113
       '@types/open-graph-scraper': 4.8.5
       argon2: 0.40.3
       astro: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(typescript@5.4.5)

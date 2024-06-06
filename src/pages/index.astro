@@ -2,6 +2,7 @@
 import Slides from "@layouts/Slides.astro";
 import Logo from "@components/Logo.astro";
 import config from "fooorum/db/config?raw";
+import db from "fooorum/src/lib/db.ts?raw";
 import feed from "fooorum/src/components/feeds/Feed.astro?raw";
 ---
 
@@ -40,13 +41,13 @@ import feed from "fooorum/src/components/feeds/Feed.astro?raw";
     <section>
       <h3>Abfragen an die Datenbank</h3>
       <pre>
-        <code data-line-numbers="62-76|77-78|79-82" class="language-typescript" set:html={feed} />
+        <code data-line-numbers="20-35|36-47" class="language-typescript" set:html={db} />
       </pre>
     </section>
     <section>
       <h3>Anzeigen der Daten</h3>
       <pre>
-        <code data-line-numbers="120-122" class="language-html" set:html={feed} />
+        <code data-line-numbers="72-74" class="language-html" set:html={feed} />
       </pre>
     </section>
   </section>

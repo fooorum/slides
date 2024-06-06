@@ -13,19 +13,19 @@
     "@astrojs/check": "^0.5.10",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@fontsource/poppins": "^5.0.14",
-    "@iconify-json/material-symbols": "^1.1.80",
+    "@iconify-json/material-symbols": "^1.1.81",
     "@iconify-json/tabler": "^1.1.113",
-    "astro": "^4.8.3",
+    "astro": "^4.9.2",
     "astro-favicons": "^2.0.2",
     "astro-icon": "^1.1.0",
     "fooorum": "github:fooorum/fooorum",
     "highlight.js": "^11.9.0",
     "reveal.js": "^5.1.0",
-    "sass": "^1.77.1"
+    "sass": "^1.77.4"
   },
   "devDependencies": {
     "@types/reveal.js": "^5.0.3",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "prettier-plugin-astro": "^0.13.0"
   },
   "prettier": {
