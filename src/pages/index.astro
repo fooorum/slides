@@ -4,6 +4,11 @@ import Logo from "@components/Logo.astro";
 import config from "fooorum/db/config?raw";
 import db from "fooorum/src/lib/db.ts?raw";
 import feed from "fooorum/src/components/feeds/Feed.astro?raw";
+import relationalesModell from "@assets/relational.lua?raw";
+import sqlSetupScript from "@assets/setup.sql?raw";
+
+const cryptpadUrl =
+  "https://cryptpad.fr/diagram/#/2/diagram/view/OzdOAYvcQ9RZhxVT5YheehZG98b5dXSUYwOl2AG2+eY/embed/";
 ---
 
 <Slides title="Fooorum Slides">
@@ -29,11 +34,39 @@ import feed from "fooorum/src/components/feeds/Feed.astro?raw";
   </section>
   <section>
     <section>
+      <h2>Datenbankentwurf</h2>
+    </section>
+    <section>
+      <h3>Entity-Relationship-Modell</h3>
+      <iframe data-src="/er-modell.pdf"></iframe>
+      <div>
+        <a href={cryptpadUrl}> cryptpad.fr/diagram </a>
+      </div>
+    </section>
+    <section>
+      <h3>Relationales Modell</h3>
+      <pre>
+        <code data-line-numbers="1-2|4|6-7|9-10" class="language-typescript" set:html={relationalesModell} />
+      </pre>
+    </section>
+    <section>
+      <h3>SQL-Setup-Script</h3>
+      <pre>
+        <code data-line-numbers="1-7|19-29" class="language-typescript" set:html={sqlSetupScript} />
+      </pre>
+    </section>
+  </section>
+  <section>
+    <section>
       <h2>Implementierung</h2>
-      <p><a href="https://github.com/fooorum/fooorum">github.com/fooorum</a></p>
+      <p>
+        <a href="https://github.com/fooorum/fooorum">github.com/fooorum</a>
+      </p>
     </section>
     <section>
       <h3>Deklaration der Tabellen</h3>
+      mit <a href="https://docs.astro.build/en/guides/astro-db/">Astro DB</a> basierend
+      auf <a href="https://orm.drizzle.team/docs/overview">Drizzle ORM</a>
       <pre>
         <code data-line-numbers="5-12|14-23|53-54" class="language-typescript" set:html={config} />
       </pre>
@@ -46,6 +79,7 @@ import feed from "fooorum/src/components/feeds/Feed.astro?raw";
     </section>
     <section>
       <h3>Anzeigen der Daten</h3>
+      mit <a href="https://astro.build/">Astro</a>
       <pre>
         <code data-line-numbers="72-74" class="language-html" set:html={feed} />
       </pre>
@@ -54,11 +88,11 @@ import feed from "fooorum/src/components/feeds/Feed.astro?raw";
   <section>
     <h2>Vielen Dank für eure Aufmerksamkeit 🎉</h2>
   </section>
-</Slides>
 
-<style lang="scss">
-  iframe {
-    width: 700px;
-    height: 300px;
-  }
-</style>
+  <style lang="scss">
+    iframe {
+      width: 700px;
+      height: 300px;
+    }
+  </style>
+</Slides>
